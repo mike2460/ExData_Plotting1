@@ -30,7 +30,9 @@ df_data_sub$DateAndTime <- as.POSIXct(col_dt)
 plot(df_data_sub$Sub_metering_1~df_data_sub$DateAndTime, type="l", xlab="", ylab="Energy sub metering")
 lines(df_data_sub$Sub_metering_2~df_data_sub$DateAndTime, col="Red")
 lines(df_data_sub$Sub_metering_3~df_data_sub$DateAndTime, col="Blue")
-legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), lty=c(1,1), lwd=c(1,1))
+legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1             ", "Sub_metering_2             ","Sub_metering_3             "), lwd=1, lty=c(1,2))
+
+#legend("topright", col=c("black", "red", "blue"), c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), lty=c(1,1), lwd=c(1,1))
 
 # Save the plot to a .png file and close the device
 
